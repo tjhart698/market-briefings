@@ -17,6 +17,14 @@
 
   <main class="wrap">
     <section class="card">
+      <h2>Market Desk Sections</h2>
+      <div class="quick-links">
+        <a class="button" href="reports/2026-05-07-investing-thesis-and-daily-research-mandate.html">Latest research paper</a>
+        <a class="button button-secondary" href="recommendations/index.html">Stock trade recommendations</a>
+      </div>
+    </section>
+
+    <section class="card">
       <h2>Latest Briefing</h2>
       <article class="report-row">
         <div>
@@ -47,11 +55,23 @@
     </section>
 
     <section class="card">
+      <h2>Trade Recommendations</h2>
+      <article class="report-row">
+        <div>
+          <p class="report-date">New Section</p>
+          <h3><a href="recommendations/index.html">Stock Trade Recommendations Archive</a></h3>
+          <p>A dedicated record of pending, approved, rejected, open, and closed trade ideas, while execution approvals remain in Telegram.</p>
+        </div>
+        <a class="button button-secondary" href="recommendations/index.html">Open recommendations</a>
+      </article>
+    </section>
+
+    <section class="card">
       <h2>How to Extend This</h2>
       <ul>
-        <li>Add each new report as a separate file in <code>market-briefings/reports/</code>.</li>
-        <li>Add a new archive row here on the homepage.</li>
-        <li>Keep a consistent structure so future automation can publish reports into the site.</li>
+        <li>Add each new report as a separate file in <code>reports/</code>.</li>
+        <li>Log each formal trade idea in <code>recommendations/index.html</code> or a future recommendation subpage.</li>
+        <li>Keep the recommendation status updated after Telegram approval decisions.</li>
       </ul>
     </section>
   </main>

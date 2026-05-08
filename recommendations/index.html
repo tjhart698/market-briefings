@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Trade Recommendations — Carve Market Desk</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <main class="wrap report-shell">
+    <p><a href="../index.html">← Back to Market Desk</a></p>
+
+    <header class="report-header card">
+      <p class="kicker">Carve Market Desk</p>
+      <h1>Stock Trade Recommendations</h1>
+      <p class="meta">Central record of all proposed trades, status, and thesis snapshots</p>
+      <p class="summary">This page is the archive for Carve’s stock trade recommendations. Trade ideas will be logged here first, with thesis, sizing, entry logic, and status. Actual execution approvals will still happen in Telegram.</p>
+    </header>
+
+    <section class="card">
+      <h2 class="section-title">How This Will Work</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>1. Recommendation Posted Here</h3>
+          <p>Each proposed trade gets a written record with rationale, sizing, entry rules, and risk notes.</p>
+        </article>
+        <article class="item">
+          <h3>2. Approval Happens in Telegram</h3>
+          <p>We will discuss the trade in chat. No order is submitted unless you approve it there.</p>
+        </article>
+        <article class="item">
+          <h3>3. Status Gets Updated</h3>
+          <p>Recommendations will be marked as pending, approved, passed, open, closed, or canceled so the archive stays clean.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Active / Pending Recommendations</h2>
+        <span class="status-pill status-watchlist">No live recommendations yet</span>
+      </div>
+      <article class="recommendation-card">
+        <div class="recommendation-topline">
+          <div>
+            <p class="recommendation-date">May 7, 2026</p>
+            <h3>Pipeline Initialized</h3>
+          </div>
+          <span class="status-pill status-watchlist">Watchlist</span>
+        </div>
+        <p>The recommendation system is now set up. The first formal trade ideas will be posted here after the morning research pass.</p>
+        <div class="detail-grid">
+          <div>
+            <p class="detail-label">Universe</p>
+            <p>Equities only, plus BITB exception</p>
+          </div>
+          <div>
+            <p class="detail-label">Portfolio Shape</p>
+            <p>3–5 concentrated positions</p>
+          </div>
+          <div>
+            <p class="detail-label">Execution</p>
+            <p>Approval required in Telegram</p>
+          </div>
+          <div>
+            <p class="detail-label">Next Step</p>
+            <p>Publish first candidate trades after research</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Recommendation Template</h2>
+      <article class="recommendation-card compact-card">
+        <div class="recommendation-topline">
+          <div>
+            <p class="recommendation-date">Template</p>
+            <h3>Ticker / Direction / Status</h3>
+          </div>
+          <span class="status-pill status-pending">Pending Approval</span>
+        </div>
+        <div class="detail-grid">
+          <div>
+            <p class="detail-label">Thesis</p>
+            <p>Why this name, why now</p>
+          </div>
+          <div>
+            <p class="detail-label">Position Size</p>
+            <p>Dollar allocation and % of sleeve</p>
+          </div>
+          <div>
+            <p class="detail-label">Entry</p>
+            <p>Bid-disciplined limit or liquid market order</p>
+          </div>
+          <div>
+            <p class="detail-label">Exit / Invalidation</p>
+            <p>What breaks the setup or completes the trade</p>
+          </div>
+          <div>
+            <p class="detail-label">Preflight</p>
+            <p>Estimated cost, buying power impact, fees</p>
+          </div>
+          <div>
+            <p class="detail-label">Telegram Decision</p>
+            <p>Approved / Passed / Revised</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Archived Outcomes</h2>
+      <p class="footer-note">Closed, rejected, or canceled recommendations will be preserved here so performance and decision quality can be reviewed over time.</p>
+      <ul class="archive-list">
+        <li>No archived trade recommendations yet.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

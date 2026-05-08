@@ -61,11 +61,28 @@ p { margin: 0 0 12px; }
   font-weight: 700;
   white-space: nowrap;
 }
+.button-secondary {
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
 a { color: var(--accent); }
 .archive-list, .rank-list, .bullet-list { padding-left: 18px; }
 .archive-list li, .rank-list li { margin: 8px 0; }
 .report-shell { padding: 28px 0 56px; }
 .report-header { margin-bottom: 20px; }
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
 .kicker {
   color: var(--accent-2);
   text-transform: uppercase;
@@ -93,6 +110,57 @@ a { color: var(--accent); }
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+.recommendation-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+}
+.compact-card {
+  padding: 16px;
+}
+.recommendation-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.recommendation-date {
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.status-pending {
+  background: rgba(255, 214, 102, 0.15);
+  color: #ffd666;
+}
+.status-watchlist {
+  background: rgba(113, 167, 255, 0.14);
+  color: #9dc2ff;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+.detail-label {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
 .footer-note {
   color: var(--muted);
   font-size: 0.94rem;
@@ -103,5 +171,10 @@ code {
   border-radius: 6px;
 }
 @media (max-width: 720px) {
-  .report-row { flex-direction: column; align-items: flex-start; }
+  .report-row,
+  .section-head,
+  .recommendation-topline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
