@@ -161,6 +161,33 @@ a { color: var(--accent); }
   letter-spacing: 0.08em;
   margin-bottom: 4px;
 }
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+.metric-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+}
+.tracker-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.tracker-table th,
+.tracker-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 12px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.tracker-table th {
+  color: var(--muted);
+  font-weight: 700;
+}
 .footer-note {
   color: var(--muted);
   font-size: 0.94rem;
