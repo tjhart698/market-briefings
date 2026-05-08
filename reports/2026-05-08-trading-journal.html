@@ -18,22 +18,19 @@
     </header>
 
     <section class="card">
-      <h2 class="section-title">Status</h2>
-      <p>Awaiting Tyler's closeout journal input.</p>
-    </section>
-
-    <section class="card">
-      <h2>Verified Information</h2>
-      <ul>
-        <li>Date: 2026-05-08</li>
-        <li>Workflow: 3:00 PM Central closeout journal prompt</li>
-        <li>Trade details, P/L, mistakes, and lessons will be added after Tyler provides them.</li>
+      <h2 class="section-title">Closeout Journal</h2>
+      <ul class="bullet-list">
+        <li><strong>Trades taken or considered:</strong> No project-sleeve trades were executed today. We considered and built the operating workflow for the sleeve, including monitoring, execution controls, fill checks, and website publishing.</li>
+        <li><strong>Why entered / why not entered:</strong> No entries were taken because today was used to harden the system around the mandate rather than force a setup. The focus was heartbeat/cron verification, Public.com execution controls, fill confirmation, and separating the $5,000 sleeve from the broader linked account.</li>
+        <li><strong>Daily P/L:</strong> No realized P/L for the project sleeve today. No project positions were opened or closed.</li>
+        <li><strong>Mistakes made:</strong> Initial confusion around the noon review because the cron job was correctly configured to stay silent unless there was a major issue. We also discovered the linked Public account is broader than the sleeve mandate, which required separating full-account sync from sleeve-specific tracking.</li>
+        <li><strong>Lessons for tomorrow:</strong> During setup, use explicit confirmation messages so system behavior is easy to verify. Keep the $5,000 sleeve isolated in tracking and reporting so performance is not contaminated by the broader account. Do not automate performance claims or fill assumptions without a clean sleeve boundary and confirmed execution data.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Bottom Line</h2>
-      <p class="footer-note">This page was created by the scheduled closeout workflow and will be updated after Tyler provides the day's trading notes.</p>
+      <p class="footer-note">Today established the operating rails for the project sleeve: alerts, execution discipline, fill confirmation, sleeve-specific tracking, and website publishing. No trade was forced just to create activity.</p>
       <p class="footer-note">For research and briefing purposes only. Not personalized financial advice.</p>
     </section>
   </main>
