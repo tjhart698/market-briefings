@@ -22,7 +22,32 @@ body {
   margin: 0 auto;
 }
 .site-header {
-  padding: 56px 0 28px;
+  padding: 32px 0 28px;
+}
+.site-nav {
+  padding-top: 20px;
+}
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  font-weight: 600;
+}
+.nav-link-active {
+  background: var(--accent-2);
+  color: #08111f;
+  border-color: transparent;
 }
 .eyebrow {
   text-transform: uppercase;
@@ -203,5 +228,8 @@ code {
   .recommendation-topline {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .nav-bar {
+    gap: 8px;
   }
 }
