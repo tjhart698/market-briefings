@@ -65,7 +65,7 @@ if count != 1:
     raise SystemExit('Could not update Latest Briefing block')
 
 archive_entry = f'''        <li>\n          <span>{date_arg}</span>\n          <a href="{report_rel}">{title}</a>\n        </li>\n'''
-archive_marker = f'<a href="{report_rel}">{title}</a>'
+archive_marker = f'<span>{date_arg}</span>\n          <a href="{report_rel}">{title}</a>'
 if archive_marker not in text:
     insert_after = '<ul class="archive-list">\n'
     if insert_after not in text:
